@@ -1,0 +1,13 @@
+{
+    "name": "ivanszkypeter/calendar-list",
+    "description": "The program list you calenders in your Google Account when you give access to it.",
+    "require": {
+        "google/apiclient": "1.*"
+    },
+    "authors": [
+        {
+            "name": "Ivanszky Peter",
+            "email": "ivanszkypeter@gmail.com"
+        }
+    ]
+}
