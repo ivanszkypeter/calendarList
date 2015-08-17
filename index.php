@@ -48,9 +48,10 @@ error_reporting(-1);
 // Get the API client and construct the service object.
 $client = getClient();
 
+// Get service object of calendar
 $service = new Google_Service_Calendar($client);
 
-// Print the user calendars.
+// Get the lists of the user calendars.
 $calendarList = $service->calendarList->listCalendarList();
 
 while(true) {
