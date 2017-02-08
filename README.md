@@ -7,45 +7,20 @@ This program list your calendars from Google Calendar. You need the give permiss
 First clone the repository:
 
      git clone https://github.com/ivanszkypeter/calendarList.git
-
+sdsd
 Navigate into the new folder:
 
      cd calendarList
-
-Download dependencies using composer:
-
+sdsdfd
+Download dependencies using composer:c
+cvv
      composer update
  
-## Set up apache entry for the folder
+## Test with PHP's built-in web server
 
-Navigate into the sites-available folder.
+Run the web server.sd
 
-     cd /etc/apache2/sites-available
-
-Create an entry for calendarList.
-
-     nano calandarList.conf
-
-Copy and paste the following:
-
-     Listen 8090
-
-     <VirtualHost *:8090>
-
-        DocumentRoot "[THE FOLDER ROUTE WHERE YOU INITIALIZED THE REPOSITORY]/calendarList/"
-
-        ErrorLog ${APACHE_LOG_DIR}/calendar_error.log
-        CustomLog ${APACHE_LOG_DIR}/calendar_access.log combined
-
-     </VirtualHost>
-
-Enable the site
-
-     a2ensite calendarList.conf
-
-Restart apache2 service.
-
-     service apache2 restart
+     php -S localhost:8090
 
 Now check `http://localhost:8090`.
      
